@@ -1,0 +1,316 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #222;
+    line-height: 1.6;
+}
+
+/* HEADER */
+header {
+    background: #071c40;
+    color: white;
+    padding: 15px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    border-bottom: 4px solid #d71920;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo img {
+    width: 60px !important;
+    height: 60px !important;
+    object-fit: contain;
+    background: transparent;
+    border-radius: 0;
+    display: block;
+    flex-shrink: 0;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+.logo h2 {
+    font-size: 30px;
+    margin: 0;
+}
+
+.logo p {
+    font-size: 20px;
+    letter-spacing: 4px;
+    margin: 0;
+}
+
+
+
+header nav {
+    display: flex;
+    align-items: center;
+    background: transparent;
+    padding: 0;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 0;
+}
+
+header nav a:hover {
+    color: #ffdf45;
+}
+
+
+
+
+/* HERO */
+.hero {
+    min-height: 530px;
+    padding: 90px 8%;
+    display: flex;
+    align-items: center;
+    color: white;
+    background:
+        linear-gradient(90deg,
+        rgba(3, 19, 48, 0.96),
+        rgba(3, 19, 48, 0.65)),
+        linear-gradient(135deg, #174d91, #071c40);
+}
+
+.hero-content {
+    max-width: 750px;
+}
+
+.subtitle {
+    color: #ffdf45;
+    letter-spacing: 2px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(34px, 5vw, 60px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span {
+    color: #ffdf45;
+}
+
+.hero-content > p:not(.subtitle) {
+    max-width: 600px;
+    margin-bottom: 28px;
+    font-size: 17px;
+}
+
+.tombol {
+    display: inline-block;
+    background: #d71920;
+    color: white;
+    padding: 13px 25px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.tombol:hover {
+    background: #a90f15;
+    transform: translateY(-2px);
+}
+
+/* BAGIAN UMUM */
+.section {
+    padding: 65px 8%;
+    text-align: center;
+}
+
+.judul {
+    color: #071c40;
+    font-size: 30px;
+}
+
+.garis {
+    width: 85px;
+    height: 5px;
+    background: #d71920;
+    margin: 12px auto 30px;
+    border-radius: 5px;
+}
+
+.deskripsi {
+    max-width: 800px;
+    margin: 0 auto 35px;
+    color: #555;
+    font-size: 16px;
+}
+
+/* KARTU */
+.kartu-container {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+    margin-top: 30px;
+}
+
+.kartu {
+    background: white;
+    padding: 28px 22px;
+    border-radius: 12px;
+    box-shadow: 0 5px 18px rgba(0, 0, 0, 0.08);
+    border-top: 4px solid #d71920;
+    transition: 0.3s;
+}
+
+.kartu:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 9px 25px rgba(0, 0, 0, 0.12);
+}
+
+.kartu h3 {
+    color: #071c40;
+    margin-bottom: 12px;
+}
+
+.kartu p {
+    color: #666;
+}
+
+.pengurus {
+    background: #e8edf5;
+}
+
+.ikon {
+    font-size: 42px;
+    margin-bottom: 12px;
+}
+
+.nama {
+    color: #d71920 !important;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* TABEL ANGGOTA */
+.tabel-container {
+    overflow-x: auto;
+    max-width: 900px;
+    margin: 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    text-align: left;
+}
+
+th, td {
+    padding: 15px 18px;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background: #071c40;
+    color: white;
+}
+
+tbody tr:nth-child(even) {
+    background: #edf2fa;
+}
+
+tbody tr:hover {
+    background: #ffe9e9;
+}
+
+.catatan {
+    color: #777;
+    font-size: 13px;
+    margin-top: 15px;
+}
+
+/* KONTAK */
+.kontak {
+    padding: 50px 8%;
+    background: #071c40;
+    color: white;
+}
+
+.kontak h2 {
+    color: #ffdf45;
+    margin-bottom: 20px;
+}
+
+.kontak p {
+    margin: 8px 0;
+}
+
+/* FOOTER */
+footer {
+    background: #041128;
+    color: #ccc;
+    text-align: center;
+    padding: 22px 15px;
+    font-size: 13px;
+}
+
+/* RESPONSIVE HP */
+@media (max-width: 768px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .logo {
+        justify-content: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero {
+        min-height: 450px;
+        padding: 65px 7%;
+    }
+
+    .kartu-container {
+        grid-template-columns: 1fr;
+    }
+
+    .section {
+        padding: 45px 6%;
+    }
+
+    .judul {
+        font-size: 25px;
+    }
+}
